@@ -1,4 +1,4 @@
-@javascript
+@javascript @cleanSession
 Feature: Log in
 
   Scenario: I log in with wrong login

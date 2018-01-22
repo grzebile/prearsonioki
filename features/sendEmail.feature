@@ -1,4 +1,4 @@
-@javascript
+@javascript @cleanSession
 Feature: Send email
 
   Scenario: Sending email

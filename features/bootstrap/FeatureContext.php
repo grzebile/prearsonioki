@@ -23,6 +23,22 @@ class FeatureContext extends MinkExtension\Context\MinkContext
     public function __construct()
     {
     }
+    /**
+     * Restart session to clean it
+     *
+     * @BeforeScenario
+     *
+     * @return null
+     */
+    public function cleanSession()
+    {
+        try {
+            $this->getMink()->restartSessions();
+        } catch(\Exception $e) {
+            $this->printDebug($e->getMessage().PHP_EOL."Failed to clear session. Upcoming tests may fail");
+        }
+    }
+
 
     /**
      * @When /^I fill in loginForm with "([^"]*)"$/
@@ -97,8 +113,9 @@ class FeatureContext extends MinkExtension\Context\MinkContext
      */
     public function iAmLoginGmail()
     {
+
         $this->iAmOnHomepage();
-        sleep(3);
+        sleep(10);
         $this->iFillInLoginFormWith("testiokimagdat");
         $this->iPressSubmitButton();
         sleep(3);
