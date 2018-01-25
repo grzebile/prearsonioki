@@ -59,7 +59,7 @@ class FeatureContext extends MinkExtension\Context\MinkContext
      * @When I press submit button
      */
     public function iPressSubmitButton(){
-        $this->pressButton(identifierNext);
+        $this->pressButton("identifierNext");
     }
 
 
@@ -67,7 +67,7 @@ class FeatureContext extends MinkExtension\Context\MinkContext
      * @When I press submit pass button
      */
     public function iPressSubmitPassButton(){
-        $this->pressButton(passwordNext);
+        $this->pressButton("passwordNext");
     }
     /**
      * iWaitSec
@@ -132,7 +132,7 @@ class FeatureContext extends MinkExtension\Context\MinkContext
      */
     public function iFillInSendtoformWith($arg1)
     {
-        $this->fillField(to,$arg1);
+        $this->fillField("to",$arg1);
     }
 
     /**
@@ -140,7 +140,7 @@ class FeatureContext extends MinkExtension\Context\MinkContext
      */
     public function iFillInSubjectformWith($arg1)
     {
-        $this->fillField(subjectbox, $arg1);
+        $this->fillField("subjectbox", $arg1);
     }
 
     /**
@@ -149,7 +149,7 @@ class FeatureContext extends MinkExtension\Context\MinkContext
     public function iAddAttachment()
     {
         $session = $this->getSession();
-     //   $session->attachFileToField($session->getSelectorsHandler()->selectorToXpath('css', "[command=\"Files\"]"), "attachment.txt");
+        //$session->attachFileToField($session->getSelectorsHandler()->selectorToXpath('css', "[command=\"Files\"]"), "attachment.txt");
 
     }
 

@@ -2,17 +2,27 @@ default:
     extensions:
         Behat\MinkExtension:
             base_url: 'https://accounts.google.com/Logout?hl=pl'
-            default_session: selenium2
-            goutte: ~
-            selenium2:
-                # chrome
-                wd_host: "http://127.0.0.1:4444/wd/hub"
-                # chrome
-                capabilities: { "browserName": "chrome", "browser": "chrome", "version":  "25", 'chrome': {'switches':['--no-sandbox']}}
-            # chrome
-            browser_name: chrome
             files_path: ~
     suites:
         default:
             contexts:
                 - FeatureContext
+win:
+    extensions:
+            Behat\MinkExtension:
+                default_session: selenium2
+                goutte: ~
+                selenium2:
+                    wd_host: "http://127.0.0.1:4444/wd/hub"
+                browser_name: firefox
+linux:
+    extensions:
+        DMore\ChromeExtension\Behat\ServiceContainer\ChromeExtension: ~
+        Behat\MinkExtension:
+            sessions:
+                default:
+                    chrome:
+                        api_url:  "http://127.0.0.1:9222"
+                        download_behavior: allow
+                        download_path: /download
+                        validate_certificate: false

@@ -4,8 +4,9 @@ Feature: Send email
   Scenario: Sending email
     Given I am login gmail
     And I go to "https://mail.google.com/mail/"
-    And I wait 10 sec
+    And I wait 4 sec
     When I go to "https://mail.google.com/mail/u/0/#inbox?compose=new"
+    And I wait 4 sec
     And I fill in sendToForm with "testiokimagdat@gmail.com"
     And I fill in subjectForm with "Subject testing mail"
     And I add attachment
