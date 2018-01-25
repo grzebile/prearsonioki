@@ -19,6 +19,10 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
             'Zend\\EventManager\\' => 18,
             'Zend\\Code\\' => 10,
         ),
+        'W' => 
+        array (
+            'WebSocket\\' => 10,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -28,7 +32,6 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\DependencyInjection\\' => 38,
-            'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
@@ -37,9 +40,9 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
         ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'PackageVersions\\' => 16,
         ),
         'I' => 
         array (
@@ -51,6 +54,11 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
             'Goutte\\' => 7,
+        ),
+        'D' => 
+        array (
+            'DMore\\ChromeExtension\\' => 22,
+            'DMore\\ChromeDriver\\' => 19,
         ),
         'B' => 
         array (
@@ -67,6 +75,10 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
         'Zend\\Code\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
+        ),
+        'WebSocket\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/textalk/websocket/lib',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -96,10 +108,6 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
         array (
             0 => __DIR__ . '/..' . '/symfony/dependency-injection',
         ),
-        'Symfony\\Component\\Debug\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/debug',
-        ),
         'Symfony\\Component\\CssSelector\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/css-selector',
@@ -120,10 +128,6 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
-        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -131,6 +135,10 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'PackageVersions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ocramius/package-versions/src/PackageVersions',
         ),
         'Interop\\Container\\' => 
         array (
@@ -151,6 +159,14 @@ class ComposerStaticInit2a20b06afb4afe6848ada746501f8ae7
         'Goutte\\' => 
         array (
             0 => __DIR__ . '/..' . '/fabpot/goutte/Goutte',
+        ),
+        'DMore\\ChromeExtension\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dmore/behat-chrome-extension/src',
+        ),
+        'DMore\\ChromeDriver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dmore/chrome-mink-driver/src',
         ),
         'Behat\\Mink\\Driver\\' => 
         array (
